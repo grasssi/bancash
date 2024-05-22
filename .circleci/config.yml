@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm install
-       run: npm install -g @angular/cli
+      - run: npm install -g @angular/cli
       - run: ng build --configuration production
       - persist_to_workspace:
           root: .
