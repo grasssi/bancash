@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:18.13
+      - image: circleci/node:17
     steps:
       - checkout
       - run: npm install npm install --prefix D:\ECF\bancash\backend\app
