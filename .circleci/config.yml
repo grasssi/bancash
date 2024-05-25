@@ -6,7 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm install npm install --prefix D:\ECF\bancash\backend\app
-      - run: sudo npm install -g @angular/cli@18.13
+      - run: sudo npm install -g @angular/cli@latest
       - run: ng build --configuration production
       - persist_to_workspace:
           root: .
